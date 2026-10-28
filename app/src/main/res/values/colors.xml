@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores que trae la plantilla, no los borres -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Fondos oscuros (Inicio, Historial, Notificaciones, Dispositivos, Perfil, Login) -->
+    <color name="ph_fondo">#1B2230</color>
+    <color name="ph_superficie">#263042</color>
+    <color name="ph_superficie_alta">#303E56</color>
+    <color name="ph_borde">#3B4A66</color>
+
+    <!-- Azules de marca -->
+    <color name="ph_primario">#1E88E5</color>
+    <color name="ph_primario_oscuro">#1565C0</color>
+    <color name="ph_primario_claro">#4FC3F7</color>
+
+    <!-- Pantallas de detalle (fondo azul con tarjetas claras) -->
+    <color name="ph_detalle_inicio">#1976D2</color>
+    <color name="ph_detalle_fin">#0B4F8A</color>
+    <color name="ph_tarjeta_clara">#F4F8FC</color>
+    <color name="ph_dato_claro">#E4EDF7</color>
+
+    <!-- Textos -->
+    <color name="ph_texto">#FFFFFF</color>
+    <color name="ph_texto_secundario">#B8C2D6</color>
+    <color name="ph_texto_oscuro">#1B2230</color>
+    <color name="ph_texto_oscuro_secundario">#55627A</color>
+
+    <!-- Estados: normal, alerta y atención -->
+    <color name="ph_normal">#1F7A4D</color>
+    <color name="ph_normal_texto">#5BE08F</color>
+    <color name="ph_normal_texto_claro">#1B7F4B</color>
+    <color name="ph_alerta">#C62F3A</color>
+    <color name="ph_alerta_texto">#FF8A91</color>
+    <color name="ph_atencion">#E0A100</color>
+
+    <!-- Blancos translucidos para círculos y etiquetas sobre tarjetas de color -->
+    <color name="ph_blanco_20">#33FFFFFF</color>
+    <color name="ph_blanco_30">#4DFFFFFF</color>
+    <color name="ph_blanco_80">#CCFFFFFF</color>
+</resources>

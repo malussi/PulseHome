@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ph_fondo"
+    android:orientation="vertical"
+    tools:context=".DispositivosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAdministracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administración"
+                android:textColor="@color/ph_texto_secundario"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvNombreApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PulseHome"
+                android:textColor="@color/ph_texto"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTituloPantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispositivos"
+                android:textColor="@color/ph_texto"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistema conectado"
+                android:textColor="@color/ph_normal_texto"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDispositivo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/ph_superficie"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardIconoDispositivo1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:cardBackgroundColor="@color/ph_primario"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/imgDispositivo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Icono del nodo sensor" app:srcCompat="@mipmap/ic_sensor"
+                            android:padding="12dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNumeroDispositivo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dispositivo 1"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvNombreDispositivo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nodo Sensor ESP32"
+                            android:textColor="@color/ph_texto"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSensoresDispositivo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Sensores MQ-2 y DHT22"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvUbicacionDispositivo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Casa Abuela · WiFi"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvEstadoDispositivo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="En línea"
+                        android:textColor="@color/ph_normal_texto"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDispositivo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/ph_superficie"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardIconoDispositivo2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:cardBackgroundColor="@color/ph_primario"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/imgDispositivo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Icono del nodo central" app:srcCompat="@mipmap/ic_nodo_central"
+                            android:padding="12dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNumeroDispositivo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dispositivo 2"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvNombreDispositivo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nodo Central ESP32"
+                            android:textColor="@color/ph_texto"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSensoresDispositivo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Recibe datos y activa alertas"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvUbicacionDispositivo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Casa del familiar · WiFi"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvEstadoDispositivo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="En línea"
+                        android:textColor="@color/ph_normal_texto"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDispositivo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/ph_superficie"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardIconoDispositivo3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:cardBackgroundColor="@color/ph_primario"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/imgDispositivo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Icono del celular" app:srcCompat="@mipmap/ic_celular"
+                            android:padding="12dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNumeroDispositivo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dispositivo 3"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvNombreDispositivo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Xiaomi Redmi 15C"
+                            android:textColor="@color/ph_texto"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSensoresDispositivo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Celular con la app PulseHome"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvUbicacionDispositivo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cuenta del cuidador"
+                            android:textColor="@color/ph_texto_secundario"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvEstadoDispositivo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="En línea"
+                        android:textColor="@color/ph_normal_texto"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAgregarDispositivo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="@color/ph_primario"
+                android:text="Agregar nuevo dispositivo"
+                android:textAllCaps="false"
+                android:textColor="@color/ph_texto"
+                android:textSize="16sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnEliminarDispositivo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/ph_alerta"
+                android:text="Eliminar dispositivo existente"
+                android:textAllCaps="false"
+                android:textColor="@color/ph_texto"
+                android:textSize="16sp"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/barraNavegacion"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/ph_primario"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/navInicio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:contentDescription="Inicio" app:srcCompat="@mipmap/ic_inicio"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/navHistorial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:contentDescription="Historial" app:srcCompat="@mipmap/ic_historial"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/navNotificaciones"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:contentDescription="Notificaciones" app:srcCompat="@mipmap/ic_notificaciones"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/navDispositivos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:contentDescription="Dispositivos" app:srcCompat="@mipmap/ic_dispositivos"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/navPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:contentDescription="Perfil" app:srcCompat="@mipmap/ic_perfil"
+            android:padding="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
